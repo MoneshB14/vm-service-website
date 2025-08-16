@@ -39,7 +39,7 @@ function App() {
 
     setIsLoadingTimings(true)
     try {
-      const response = await fetch(`http://localhost:8888/vm/api/website-booking/available-timings?date=${date}`)
+      const response = await fetch(`http://13.60.223.91:8888/vm/api/website-booking/available-timings?date=${date}`)
       const data = await response.json()
 
       if (data.success) {
@@ -64,7 +64,7 @@ function App() {
 
     setIsSubmitting(true)
     try {
-      const response = await fetch('http://localhost:8888/vm/api/website-booking/book-service', {
+      const response = await fetch('http://13.60.223.91:8888/vm/api/website-booking/book-service', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -817,7 +817,7 @@ function App() {
             </p>
             <div className="border-t border-slate-800 pt-6">
               <p className="text-slate-500">
-                © 2024 Venkateswara Motors. All rights reserved.
+                © 2025 Venkateswara Motors. All rights reserved.
               </p>
             </div>
           </div>
